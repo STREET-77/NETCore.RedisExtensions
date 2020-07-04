@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageId>NETCore.RedisExtensions</PackageId>
+    <PackageVersion>0.0.1</PackageVersion>
+    <Authors>STREET-77</Authors>
+    <Copyright>STREET-77</Copyright>
+    <Owners>STREET-77</Owners>
+    <PackageProjectUrl>https://github.com/STREET-77/NETCore.RedisExtensions</PackageProjectUrl>
+    <Title>NETCore.RedisExtensions</Title>
+    <Description>NETCore.RedisExtensions</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="StackExchange.Redis" Version="2.1.58" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="3.1.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Filter\" />
+  </ItemGroup>
+</Project>
